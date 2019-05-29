@@ -143,7 +143,9 @@ public class EnterPinActivity extends AppCompatActivity {
                 checkForFingerPrint();
             }
         }
+
         HomeWatcher mHomeWatcher = new HomeWatcher(this);
+
         mHomeWatcher.setOnHomePressedListener(new OnHomePressedListener() {
             @Override
             public void onHomePressed() {
@@ -485,11 +487,11 @@ public class EnterPinActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private class FingerprintException extends Exception {
-        public FingerprintException(Exception e) {
-            super(e);
-        }
-    }
+//    private class FingerprintException extends Exception {
+//        public FingerprintException(Exception e) {
+//            super(e);
+//        }
+//    }
 
 
 }
